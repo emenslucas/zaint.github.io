@@ -15,8 +15,8 @@ body {
 }
 
 ::selection {
-  background: #5c7658;
-  color: #fff;
+  background: #e6d385;
+  color: #41360d;
 }
 
 .contenedor-tarjeta {
@@ -24,14 +24,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(85, 173, 224);
+  background-color: #f4e6aa;
   border-radius: 20px;
   height: 100%;
 }
 
 .fondo-tarjeta {
   height: 100%;
-  background-color: rgb(144, 214, 255);
+  background-color: #e6d385;
   padding: 0.5em;
   border-radius: 20px;
 }
@@ -42,7 +42,7 @@ body {
   height: 100%;
   overflow: hidden;
   border-radius: 20px;
-  border: 0.5em solid white;
+  border: 0.5em solid #e6d385;
 }
 
 .contenedor-imagen #perfil {
@@ -66,6 +66,7 @@ body {
   transition: opacity 0.5s;
   width: 100%;
 }
+
 .contenedor-imagen:hover .texto-superpuesto {
   opacity: 1;
 }
@@ -89,9 +90,10 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   z-index: 2;
+  gap: 0.5em;
 }
 .contenedor-iconos a figure img {
-  width: 20px;
+  width: 30px;
 }
 .numero-tarjeta,
 h2 {
@@ -150,13 +152,13 @@ h2 {
 }
 
 .contenedor-videos-secundarios {
-  background: #ddffd8;
+  background: #f4e6aa;
   border-radius: 20px;
 }
 
 .contenedor-masVideos {
-  background-color: #567052;
-  border-radius: 20px;
+  background-color: #e6d385;
+  border-radius: 0 0 20px 20px;
   padding: 2em;
 }
 
@@ -173,6 +175,3 @@ h2 {
     top: 60%;
   }
 }
-
-
-
