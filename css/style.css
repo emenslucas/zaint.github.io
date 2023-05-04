@@ -168,6 +168,11 @@ h2 {
   #tarjetas-sm {
     margin: 1em 0;
   }
+  
+  .texto-superpuesto {
+    top: 60%;
+  }
+}
 }
 
 
