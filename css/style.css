@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  background-color: #1a1919;
+  font-family: Poppins, sans-serif;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+::selection {
+  background: #5c7658;
+  color: #fff;
+}
+
+.contenedor-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 173, 224);
+  border-radius: 20px;
+  height: 100%;
+}
+
+.fondo-tarjeta {
+  height: 100%;
+  background-color: rgb(144, 214, 255);
+  padding: 0.5em;
+  border-radius: 20px;
+}
+
+.contenedor-imagen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 0.5em solid white;
+}
+
+.contenedor-imagen #perfil {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s, filter 0.5s;
+  object-fit: cover;
+}
+.contenedor-imagen:hover #perfil {
+  transform: scale(1.1);
+  filter: brightness(40%);
+}
+.texto-superpuesto {
+  position: absolute;
+  left: 50%;
+  padding: 1em;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 100%;
+}
+.contenedor-imagen:hover .texto-superpuesto {
+  opacity: 1;
+}
+.texto-superpuesto h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.texto-superpuesto h1 {
+  font-weight: 600;
+  font-size: 64px;
+}
+.texto-superpuesto p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 180%;
+}
+.contenedor-iconos {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+.contenedor-iconos a figure img {
+  width: 20px;
+}
+.numero-tarjeta,
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+.animar-texto {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1s, transform 1s;
+}
+.animar-texto.activo {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contenedor-video div,
+.contenedor-video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-video {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+
+.contenedor-video:hover {
+  -webkit-box-shadow: 0 0 18px -4px #000;
+  -moz-box-shadow: 0 0 18px -4px #000;
+  box-shadow: 0 0 18px -4px #000;
+  transition: 0.2s;
+}
+
+.contenedor-video-principal {
+  background: #f4e6aa;
+  border-radius: 20px;
+  padding: 1em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-ultimo-video {
+  background-color: #e6d385;
+  padding: 1em;
+  border-radius: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-videos-secundarios {
+  background: #ddffd8;
+  border-radius: 20px;
+}
+
+.contenedor-masVideos {
+  background-color: #567052;
+  border-radius: 20px;
+  padding: 2em;
+}
+
