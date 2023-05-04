@@ -174,4 +174,8 @@ h2 {
   .texto-superpuesto {
     top: 60%;
   }
+  
+   h2 {
+    font-size: 40px;
+  }
 }
