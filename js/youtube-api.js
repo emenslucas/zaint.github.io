@@ -1,4 +1,4 @@
-gapi.load("client", () => {
+function loadYouTubeVideos() {
   gapi.client.init({
     apiKey: "AIzaSyAYzB2t_8K2LODUsjA1WzFwZR6Dof3ljfw",
     discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"]
@@ -17,6 +17,13 @@ gapi.load("client", () => {
   }, error => {
     console.error("Error al cargar la API de YouTube", error);
   });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const script = document.createElement('script');
+  script.src = "https://apis.google.com/js/api.js?onload=loadYouTubeVideos";
+  document.head.appendChild(script);
 });
+
 
 
