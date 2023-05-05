@@ -20,7 +20,7 @@ gapi.load("client", () => {
             (response) => {
               const video = response.result.items[0];
               const videoElement = document.createElement("div");
-              videoElement.innerHTML = `<iframe src="https://www.youtube.com/embed/${video.id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+              videoElement.innerHTML = `<iframe loading="lazy" src="https://www.youtube.com/embed/${video.id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
               document
                 .getElementById(`video${index + 1}`)
                 .appendChild(videoElement);
